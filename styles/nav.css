@@ -1,0 +1,263 @@
+:root {
+  --pink: #df1b6f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container > header > nav {
+  width: 100%;
+  height: 8rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* Top Nav */
+.container > header > nav > .top__nav {
+  width: 100%;
+  height: 55%;
+  background-color: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > header > nav > .top__nav > .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.container > header > nav > .top__nav > .box > img {
+  width: 3rem;
+  filter: invert(1);
+}
+.container > header > nav > .top__nav > .box > p {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+.container > header > nav > .top__nav > .box > .partner {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 15px 15px;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: all 0.3s linear;
+}
+.container > header > nav > .top__nav > .box > .partner:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Bottom Nav */
+.container > header > nav > .bottom__nav {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > header > nav > .bottom__nav > .mid__nav {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .logo > img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .logo > p {
+  font-size: 20px;
+  color: var(--pink);
+  font-weight: 600;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > .btn {
+  display: flex;
+  gap: 1rem;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > .btn > .login {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  transition: all 0.1s linear;
+  border: 1px solid black;
+}
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > .btn
+  > .sign__up {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: var(--pink);
+  color: white;
+  font-weight: 600;
+  transition: all 0.1s linear;
+  border: none;
+}
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > .btn
+  > .login:hover {
+  background-color: rgba(201, 230, 239, 0.4);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > .btn
+  > .sign__up:hover {
+  background-color: #c21760;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > label
+  > .language {
+  padding: 10px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > .bag__icons {
+  padding: 10px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > label
+  > .language:hover {
+  box-shadow: 0px 0px 10px lightgray;
+  background-color: lightgray;
+  cursor: pointer;
+}
+.container
+  > header
+  > nav
+  > .bottom__nav
+  > .mid__nav
+  > .form
+  > .bag__icons:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px lightgray;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.container > header > nav > .bottom__nav > .mid__nav > .form > label > .language{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > label > .language{
+  transform: rotate(0);
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > label > .language:hover{
+  background-color: lightgray;
+  transform: scale(1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > ul,
+.container > header > nav > .bottom__nav > .mid__nav > .form > input{
+    display: none;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > #check:checked ~ label > .language > .up{
+  transform: rotate(180deg);
+  transition: all 0.1s linear;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > label > .language > p {
+  font-weight: 600;
+}
+/* list khmer and eng  */
+.container > header > nav > .bottom__nav > .mid__nav > .form > #check:checked ~ ul{
+  display: block;
+  position: absolute;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0px -5px 20px -15px rgba(0, 0, 0);
+  border-radius: 20px;
+  top: 100%;
+  list-style: none;
+  padding: 10px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > #check:checked ~ ul > li{
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > ul > li > i{
+  margin-left: 40px;
+  color: var(--pink);
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > ul > li > i:hover{
+  color: black;
+}
+.container > header > nav > .bottom__nav > .mid__nav > .form > #check:checked ~ ul > li:hover > i{
+  background-color: rgba(201, 230, 239, 0.4);
+  color: black;
+}
+

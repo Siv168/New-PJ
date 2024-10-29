@@ -1,0 +1,83 @@
+.container > main{
+    width: 100%;
+    /* height: 300vh; */
+    /* background-color: aqua; */
+  }
+  .container > main > .prepare{
+    height: 150vh;
+    /* background-color: beige; */
+    position: relative;
+  }
+  .container > main >.prepare > .pre{
+    position: absolute;
+    top: 0px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .container > main > .prepare > .pre > .text{
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+  }
+  .container > main > .prepare > .pre > .text > p {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .container > main > .prepare > img {
+    width: 100%;
+    height: 890px;
+    overflow: hidden;
+  }
+  .container > main > .prepare > .card{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    height: 220px;
+    bottom: 150px;
+  }
+  .container > main > .prepare > .card > .card__body{
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+    padding: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  .container > main > .prepare > .card > .card__body > .btn{
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .container > main > .prepare > .card > .card__body > .btn > span{
+    width: 120px;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .container > main > .prepare > .card > .card__body > .btn > span > button {
+    border: 1px solid #e21b70;
+    background-color: #e21b70;
+    font-weight: 500;
+    color:white;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .container > main > .prepare > .card > .card__body > .btn > span > button:hover {
+    background-color: rgb(196,25,99);
+    transform: scale(1.1);
+    padding: 8px 17px;
+    transition: all 0.3s;
+  }
+  
